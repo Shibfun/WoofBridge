@@ -215,6 +215,10 @@
                     <span id="fromTokenName">LUISA</span>
                 </div>
 <select id="tokenSelector" onchange="updateTokenSelection()">
+    <option value="FEED">FEED</option>
+    <option value="DAMN">DAMN</option>
+    <option value="CHIKA">CHIKA</option>
+    <option value="WOW">WOW</option>
     <option value="LUISA">LUISA</option>
     <option value="USAGI">USAGI</option>
     <option value="NEKO">NEKO</option>
@@ -256,6 +260,58 @@
     <script src="https://cdn.jsdelivr.net/npm/web3@1.7.0/dist/web3.min.js"></script>
     <script>
 const tokens = {
+        FEED: {
+        logo: 'https://woofswap.finance/image/tokens/feed.png',
+        Base: {
+            mechanism: 'Burn & Mint',
+            poolAddress: '0x6419221a0856f507a0b869814e461033d810990b',
+            tokenAddress: '0xc3d77eb7665edf3c1d3bdaa325a14d6ff254d2dd'
+        },
+        Shibarium: {
+            mechanism: 'Lock & Release',
+            poolAddress: '0x9a22e73ef65f7ea0e6f2ae40f6847c944d3b5153',
+            tokenAddress: '0xe9cb2d7adc24fc59fe00d6c0a0669bdf16805fe0'
+        }
+    },
+    DAMN: {
+        logo: 'https://woofswap.finance/image/tokens/DAMN.png',
+        Base: {
+            mechanism: 'Burn & Mint',
+            poolAddress: '0x1dbdd800477b67191b70c51f327968f0f835c58d',
+            tokenAddress: '0x28be0935fd470c46325bc47a1c65c168e8473a3d'
+        },
+        Shibarium: {
+            mechanism: 'Lock & Release',
+            poolAddress: '0x68d443e22aed9bdef014fad3fd19752cceae9990',
+            tokenAddress: '0xece898edcc0af91430603175f945d8de75291c70'
+        }
+    },
+    CHIKA: {
+        logo: 'https://woofswap.finance/image/tokens/ChikaLogo.png',
+        Base: {
+            mechanism: 'Burn & Mint',
+            poolAddress: '0xce5c6d7383bb72fd7890f07acf51c76a36ac00fb',
+            tokenAddress: '0xff70300dded939ff6db9174eb38eec183a12344b'
+        },
+        Shibarium: {
+            mechanism: 'Lock & Release',
+            poolAddress: '0x9ad61f86cd457da798c859c26517acd1fc971c04',
+            tokenAddress: '0x61cfa29261d8151d39244b8ffcf8dfd2f9df3839'
+        }
+    },
+    WOW: {
+        logo: 'https://woofswap.finance/image/tokens/wow.png',
+        Base: {
+            mechanism: 'Burn & Mint',
+            poolAddress: '0x0563f39d663d44b64677ead7d75cdc7ada842ecf',
+            tokenAddress: '0xc97cb00245a50c607b57d9b6d2e854fca3b33f9c'
+        },
+        Shibarium: {
+            mechanism: 'Lock & Release',
+            poolAddress: '0xb858917f2da9253736c7869ed40f1212015af4de',
+            tokenAddress: '0x8f4b11d923bbaa6206f3dd3ff84e8e31bafb49b7'
+        }
+    },
     LUISA: {
         logo: 'https://www.woofswap.finance/image/tokens/luisa.png',
         Base: {
